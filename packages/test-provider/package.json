@@ -1,0 +1,50 @@
+{
+  "name": "@rarible/test-provider",
+  "version": "0.9.19",
+  "keywords": [
+    "rarible",
+    "common",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rariblecom/ts-common.git"
+  },
+  "license": "MIT",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "/build"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig-build.json",
+    "clean": "rimraf ./build",
+    "test": "jest --passWithNoTests",
+    "verify": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ethereumjs/common": "^2.4.0",
+    "@ethereumjs/tx": "^3.3.0",
+    "eth-sig-util": "^3.0.1",
+    "ethereumjs-util": "^7.1.0",
+    "ethereumjs-wallet": "^1.0.1",
+    "web3-provider-engine": "^16.0.3"
+  },
+  "devDependencies": {
+    "@rarible/types": "^0.9.19",
+    "@types/jest": "^27.0.2",
+    "@types/web3-provider-engine": "^14.0.1",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4",
+    "web3": "^1.7.0"
+  },
+  "peerDependencies": {
+    "tslib": "^2.3.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "gitHead": "5a0d3793f2087e91a6ee92fd906ea8efacf702cd"
+}
